@@ -80,6 +80,7 @@ main{padding:30px 8px 80px 18px;min-width:0}
 .storyimg{max-width:100%;border-radius:6px;border:1px solid var(--line)}
 .vidwrap{max-width:560px}
 .vidwrap iframe{width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;background:#000}
+.vidwrap video{width:100%;max-height:70vh;border:1px solid var(--line);border-radius:6px;background:#000}
 .tnote{color:var(--dim);font-size:11px;margin:2px 0 8px;font-style:italic}
 .tinner .src{display:inline-block;margin:6px 0 10px;font-size:12px;color:var(--grn2);border:1px solid var(--line);padding:3px 10px;border-radius:4px;transition:border-color .2s,color .2s}
 .tinner .src:hover{border-color:var(--grn);color:var(--grn)}
@@ -148,73 +149,53 @@ html{scroll-behavior:auto}
   </section>
   <section id="weather" class="sec" data-sec="weather">
  <div class="wchart"><div class="wcol">
-<div class="wh">09</div>
-<div class="wsym">☁</div>
-<div class="wt">+19</div>
-<div class="wp">0%</div></div><div class="wcol">
-<div class="wh">10</div>
-<div class="wsym">☁</div>
-<div class="wt">+19</div>
-<div class="wp">0%</div></div><div class="wcol">
-<div class="wh">11</div>
-<div class="wsym">⛅</div>
-<div class="wt">+20</div>
-<div class="wp">0%</div></div><div class="wcol">
-<div class="wh">12</div>
-<div class="wsym">⛅</div>
-<div class="wt">+20</div>
-<div class="wp">0%</div></div><div class="wcol rain">
-<div class="wh">13</div>
-<div class="wsym">🌧</div>
-<div class="wt">+21</div>
-<div class="wp">30%</div></div><div class="wcol">
 <div class="wh">14</div>
 <div class="wsym">⛅</div>
-<div class="wt">+22</div>
+<div class="wt">+24</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">15</div>
-<div class="wsym">🌤</div>
-<div class="wt">+23</div>
+<div class="wsym">⛅</div>
+<div class="wt">+24</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">16</div>
-<div class="wsym">🌤</div>
-<div class="wt">+23</div>
+<div class="wsym">⛅</div>
+<div class="wt">+24</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">17</div>
 <div class="wsym">🌤</div>
-<div class="wt">+22</div>
+<div class="wt">+23</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">18</div>
-<div class="wsym">🌤</div>
+<div class="wsym">☁</div>
 <div class="wt">+22</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">19</div>
-<div class="wsym">☁</div>
+<div class="wsym">🌤</div>
 <div class="wt">+21</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">20</div>
 <div class="wsym">☁</div>
-<div class="wt">+19</div>
+<div class="wt">+20</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">21</div>
-<div class="wsym">⛅</div>
-<div class="wt">+18</div>
+<div class="wsym">☁</div>
+<div class="wt">+19</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">22</div>
-<div class="wsym">🌙</div>
-<div class="wt">+17</div>
+<div class="wsym">☁</div>
+<div class="wt">+18</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">23</div>
-<div class="wsym">🌙</div>
+<div class="wsym">⛅</div>
 <div class="wt">+17</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">00</div>
 <div class="wsym">🌙</div>
-<div class="wt">+16</div>
+<div class="wt">+17</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">01</div>
-<div class="wsym">🌙</div>
-<div class="wt">+15</div>
+<div class="wsym">☁</div>
+<div class="wt">+16</div>
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">02</div>
 <div class="wsym">⛅</div>
@@ -222,7 +203,7 @@ html{scroll-behavior:auto}
 <div class="wp">0%</div></div><div class="wcol">
 <div class="wh">03</div>
 <div class="wsym">🌙</div>
-<div class="wt">+14</div>
+<div class="wt">+15</div>
 <div class="wp">0%</div></div></div><div class="wsun">sunset 20:02</div></section><section id="world_news" class="sec" data-sec="world_news">
 <div class="shead"><span class="sn">[01]</span> WORLD <span class="srule"></span></div>
 <details class="tcard" open>
@@ -248,7 +229,7 @@ html{scroll-behavior:auto}
 <details class="tcard" open>
 <summary><span class="prompt">$</span> <span class="tlink">Шесть человек погибли при ракетном обстреле ВСУ по Белгородской области</span> <span class="dim">[]</span> <span class="tog">[−]</span></summary>
 <div class="tinner">
-<div class="abody serif"><p>Проверка браузера перед переходом на сайт Это автоматический процесс. Вы будете перенаправлены на сайт в ближайшее время. Пожалуйста ожидайте... Checking your browser accessing</p><p>This process is automatic. Your browser will redirect to your requested content shortly. Please allow up to 5 seconds</p></div>
+<div class="abody serif"><p>В селе Колосково (Валуйский округ) при ракетном обстреле погибли 6 человек, 4 ранены — сообщил врио губернатора; ночью ПВО сбила более 50 украинских БПЛА над Ростовской областью. Одна из крупнейших воздушных атак за время войны.</p></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>Шесть человек погибли при ракетном обстреле ВСУ в Белгородской области Шесть мирных жителей погибли, еще четыре пострадали при ракетном обстреле Вооруженных сил Украины Валуйского округа Белгородской области. Об этом 17 августа сообщил врио губернатора Александр Шуваев.</p><p>«Киевские террористы обстреляли ракетами село Колосково Валуйского округа. Погибли шесть мирных жителей, четверо пострадали, в том числе ребенок», — написал он в мессенджере «Макс». Двум пострадавшим медицинскую помощь оказали на месте, от госпитализации они отказались. Остальных, в том числе несовершеннолетнего, направили в Валуйскую центральную районную больницу. Кроме того, на месте удара загорелась хозяйственная постройка и был поврежден легковой автомобиль.</p><p>В Херсонской области 16 августа от удара вражеского беспилотного летательного аппарата по автомобилю погибли мужчина и женщина. Отмечалось, что супруги были предпринимателями из Нижних Серогоз и направлялись в Мелитополь за товаром для своего магазина.</p></div></details>
 <a class="src" href="https://iz.ru/2150169/2026-08-17/shest-chelovek-pogibli-pri-raketnom-obstrele-vsu-po-belgorodskoi-oblasti" target="_blank" rel="noopener">OPEN SOURCE ↗</a>
 
 </div></details></section><section id="politics" class="sec" data-sec="politics">
@@ -292,12 +273,12 @@ html{scroll-behavior:auto}
 <div class="tinner">
 <div class="abody serif"><p>The voice of Wile E. Coyote says he's done fighting for the shelved WB film: 'we made a great movie, the studio buried it' — 4.7k upvotes; the thread rehashes the whole tax-write-off saga.</p></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>As Coyote vs. Acme finally gets its day in court, John Cena has a pretty levelheaded reaction to the once-shelved movie premiering in theaters. The Emmy nominee explained how he “can accept both the positive and the negative” of the situation after Ketchup Entertainment saved the Dave Green-helmed Looney Tunes movie, which premieres Aug. 28 in theaters, from Warner Bros. Discovery following the newly-merged company’s decision to cancel the release in 2023.</p><p>“I am hired by an employer to do a task, and it’s my job to prepare as much as I can, be early, be coachable, be passionate, and be reliable. I do that and hope for the best. Those expectations are beyond my control, so it doesn’t make me view the business any differently,” he told Entertainment Weekly. “Keep in mind, it is the movie business. Sometimes, business decisions are things that we don’t see through the same lens.” Watch on Deadline</p><p>Cena continued, “Of course, I want my work seen by an audience. That’s how I can accept both the positive and the negative and get better as a performer. But I don’t own my performance. I’m contracted to do a job, and the person who owns it gets to decide what happens with it.” Ultimately, Cena rationalizes, “Even if the movie never saw the light of day, the takeaway I have is that, with the things within my control, I got to be there on the ground with people who made me better and people I care about, and I got to do the thing.”</p><p>In Coyote vs. Acme, Wile E. Coyote sees an ad for attorney Kevin Avery’s (Will Forte) legal action against the Acme Corporation’s faulty products, deciding to fight back after decades of failed attempts to apprehend his nemesis, Road Runner. The movie also stars Lana Condor, Tone Bell, Martha Kelly, Luis Guzmán and countless beloved Looney Tunes characters. Written by Samy Burch from a story by her, James Gunn and Jeremy Slater, producers include Chris DeFaria and Gunn.</p><p>In November 2023, Warners shelved the movie, which was based on the 1990 New Yorker article by Ian Frazier, receiving a $30 million tax write-off. The company also shelved Batgirl and Scoob! Holiday Haunt amid the company’s merger. Coyote vs. Acme eventually sold to Ketchup last year in a deal said to be in the $50 million range.</p></div></details>
 <a class="src" href="https://reddit.com/r/movies/comments/1vns0it/john_cena_made_peace_with_coyote_vs_acme_never/" target="_blank" rel="noopener">OPEN SOURCE ↗</a>
-<div class="tcmt"><span class="ta">├─ th30be [20]</span>
-<span class="tb">│  <span class="serif">There has to be a copy of it somewhere. Its truly unbelievable the BS that went on with that movie.</span></span></div>
-<div class="tcmt"><span class="ta">├─ Gunslinger_ [12]</span>
-<span class="tb">│  <span class="serif">I can't believe how many people don't understand this. Batgirl had no VFX done, no sound effects added, no score recorded, no ADR to fix noisy production noise. Just what they filmed, that's it. There isn't a final viewable movie to be watched.</span></span></div>
-<div class="tcmt"><span class="ta">├─ Jondev1 [11]</span>
-<span class="tb">│  <span class="serif">besides what the other commenters said, batgirl also was not actually finished when they shelved it.</span></span></div>
+<div class="tcmt"><span class="ta">├─ EricM1124 [1.6k]</span>
+<span class="tb">│  <span class="serif">Well I’m glad somebody didn’t, this is going to be an all-timer</span></span></div>
+<div class="tcmt"><span class="ta">├─ primal_slayer [1.5k]</span>
+<span class="tb">│  <span class="serif">I hope it makes a billion solely because WB cant make ANY MONEY FROM IT (unless im wrong)</span></span></div>
+<div class="tcmt"><span class="ta">├─ nanosekond [655]</span>
+<span class="tb">│  <span class="serif">IIRC WB sold the movie rights for 50m. I’m very curious at how well the movie will do. It has some good ratings so far</span></span></div>
 </div></details><details class="tcard" open>
 <summary><span class="prompt">$</span> <span class="tlink">'House of the Dragon' Season 3 Finale Hits 21 Million Viewers in Three Days</span> <span class="dim">[r/television · u/BurgerNugget12 · ▲ 2.6k · 698c]</span> <span class="tog">[−]</span></summary>
 <div class="tinner">
@@ -329,7 +310,7 @@ I can see why she wouldnt put any of them in a position close to her.</span></sp
 <details class="tcard" open>
 <summary><span class="prompt">$</span> <span class="tlink">Личное пространство</span> <span class="dim">[]</span> <span class="tog">[−]</span></summary>
 <div class="tinner">
-<div class="abody serif"><p>Пост дня (9.3k рейтинга, 1249 комментариев): гиперопека и личное пространство подростка — скандал из-за пароля на телефоне; в комментах разбор принципа «закрытых дверей» и пост-ответ с продолжением.</p></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>Правила сообщества 1.Соблюдать правила Пикабу 2.Не стоит выкладывать посты по типу «мы пописали» «мы поели» «это наш первый зуб» 3.Не устраивать споры и срачи по каждому не похожему на ваше мнение</p><p>4.Ставить нормальные тэги. 5.Нельзя выкладывать посты не по теме сообщества. 6. Поддерживать интересных авторов</p></div></details>
+<div class="abody serif"><p>Пост дня (9.3k рейтинга, 1249 комментариев): гиперопека и личное пространство подростка — скандал из-за пароля на телефоне; в комментах разбор принципа «закрытых дверей» и пост-ответ с продолжением.</p></div><div class="abody"><img class="storyimg" src="https://cs4.pikabu.ru/s/2026/08/16/11/af636pvo.jpg" alt="" loading="lazy"></div><div class="abody"><img class="storyimg" src="https://cs19.pikabu.ru/s/2026/08/16/11/af6tw6sj.jpg" alt="" loading="lazy"></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>Это как говорится было продолжение, а вот приквел этой истории Показать полностью**2** [комментарии (44)](https://pikabu.ru/story/otvet_na_post_lichnoe_prostranstvo_14247736#comments) 1122</p><p>1 день назад Дайте пацану спокойно гуся подушить, изверги! раскрыть ветку (43) 532</p><p>1 день назад Так, а в чем проблема пароля, если она не читает его переписки? раскрыть ветку (22) 1824</p><p>1 день назад Принцип закрытых дверей в своей семье я ввела сразу, как начали жить вместе: если дверь в комнату открыта - можешь заходить и не стучаться, если дверь в комнату закрыта - стучись и жди ответа. Это работает как в сторону ребенка, так и в сторону родителя.</p><p>В родительской семье такого принципа не было. Все двери на распашку, объяснялось тем, что мы семья, кого стесняться. Бесило очень. раскрыть ветку (224) 410 1 день назад</p><p>Мамаш таких развелось.. До сих пор помню обречённый взгляд этого парнишки на "Алых парусах" раскрыть ветку (15) 59</p><p>18 часов назад У меня аж вьетнамские флешбеки, когда я соскакивал с подруги, когда мать домой приходила, и держал дверь, чтоб не вошли пока онамодевается, там не то, что без стука, просто входила без особой причины - видит женская обувь в коридоре и прямой наводкой ко мне с комнату. Брррр....</p><p>раскрыть ветку (7) 366 ушла в горы 1 день назад У нас на дверных ручках были встроенные маленькие замочки, которые можно было закрыть и открыть изнутри. Вряд ли родители специально такие двери выбирали - вероятно, взяли первые попавшиеся. Про эти замочки вообще никто не вспоминал до тех пор пока я не выросла и меня не начало напрягать, что мама заходит ко мне в комнату без стука в любое время дня и ночи.</p><p>После нескольких разговоров, где я просила стучать, а она не понимала, я просто психанула и начала закрывать этот замок. Вот она удивилась в первый раз ) раскрыть ветку (22) 548 1 день назад</p><p>Ну тут все понятно. Надо отселять пацана. Пора. Предлагаю ПТУ километров за 200 от вас. Для начала. Пусть будет на геолога. Или нефтяника. Край археолог. Потом уедет на север работать. Будет из тундры слать вам подарки. Внуков привозить раз в пять лет. Короче одни плюсы. раскрыть ветку (32)</p><p>196 1 день назад Дочке 9 лет, стусь всегда и если что-то надо у неё взять - всегда спрашиваю разрешения. Пару раз она отвечает: "Нет!". Я: "ну нет, так нет и ухожу". В глазах дочки читается: "а что, так можно было?" - это если их разговоры с женой послушать.</p><p>раскрыть ветку (16) 219 1 день назад Она или полная ебанашка, или отборный тролль, третьего не дано</p><p>раскрыть ветку (33) 27 20 часов назад Сукааааа. Ор боли просто. Я до 18 лет жила в проходной комнате с печкой, батя приходил курить, брат туда сюда ходил постоянно, все всегда видели чем я занимаюсь. Дверей не было. Принципиально не хотели ставить. В ванной не было замка и мама спокойно заходила когда я мылась, переодевалась. Общагу в унике не дали. В 18 брат съехал и меня в его комнату отправили и я успокоилась немного. Меня постоянно спрашивали что я такая нервная и ни с кем не общаюсь и громко осуждали брата, который двери поставил в свою комнату.</p><p>раскрыть ветку (2) 873 1 день назад Интересно, чтобы сказала моя дочь сейчас, в свои 16, когда я зашёл бы к ней в комнату без стука.</p><p>Мамка то там, явно, ебанутая. Мало того, что в 15 лет дети и мастурбацией занимаются, так и просто они хотят побыть одни, пообщаться с кем-то без свидетелей и банально переодеваться хотят не озираясь на дверной проём. Да это просто базовые вещи. Тем более она вроде понимает, что так должно быть, задаваясь вопросом "а у вас тоже началось?". раскрыть ветку (83)</p><p>491 1 день назад Я так понимаю, сын намекает, чтоб они тоже двери закрывали, когда с мужем ебутся. раскрыть ветку (11)</p><p>63 1 день назад У меня так братик замок в дверную ручку установил, чтобы мамка без стука не заходила.. Братику было 24 года, если что 😆</p><p>раскрыть ветку (19) 1181 1 день назад Сыну просто нужно, чтоб мама разок увидела как он дрочит и она сразу поймет, что личное пространство существует.</p><p>раскрыть ветку (200) 51 1 день назад Сын в её спальню с закрытой дверью - тоже без стука может входить?</p><p>раскрыть ветку (2) 72 Йожик усталь 1 день назад У меня с 13 лет была щеколда на двери, что бы никто ее открыть не мог. Когда хотел, тогда и закрывался. За это я родителям очень благодарен.</p><p>раскрыть ветку (7) 185 :o) 1 день назад Про переходный возраст тетенька не в курсе? 15 лет, там и без дрочки не все так просто.</p><p>раскрыть ветку (15) 104 1 день назад Ебобо совсем похоже. У моего одноклассника был ебанутый дед, он постоянно верещал что в его доме все двери должны быть открыты, и бегал открывал. В туалете даже защелки не было. От квартир родственников были у него ключи, мог без предупреждения прийти к ним домой, и очень огорчился когда они замки поменяли, выдал что это они от него огораживаются, не хотят общаться)</p><p>раскрыть ветку (8) 41 1 день назад Интуитивно чувствую умышленный разгон для срача, прям написано по кальке из серии про яжемамок, тарелочниц и прочие высосанные из разных мест байки. Неприхотливую публику без критического мышления непременно должно тронуть.</p><p>раскрыть ветку (4) 413 1 день назад 1. вы-то с папой двери закрываете</p><p>2. если никто двери не закрывает, то зачем они есть в этой квартире? раскрыть ветку (32) 87 1 день назад</p><p>раскрыть ветку (2) 67 1 день назад Вот тоже такая ситуация с сыном произошла. Зашёл без стука.... Пришлось объяснять про мастурбацию, и что в принципе это не вредит организму. Да и в целом не стоит заходить в комнату к папе без стука.))</p><p>261 1 день назад Вообще это база уважать личное пространство другого человека. У меня сыну 14, без стука к нему не захожу. Он тоже стучится, если надо ко мне в комнату зайти. Да и спокойно говорит с кем пойдет гулять.</p><p>раскрыть ветку (20) 24 22 часа назад Как-то в парикмахерской соседний мастер так радовалась, что душевую кабинку поставила. Мол, сын раньше мыться не очень любил, а теперь по 2-3 раза в день в душ бегает и зависает там на полчаса. Спросила, сколько лет сыну. Одиннадцать. Ну, не стала разочаровывать, пусть думает, что Мойдодыр покусал :)</p><p>11 20 часов назад Моя мать очень любила заходить в мою комнату в 6 утра и начинать искать свои вещи (в моей комнате где вообще ее вещей не было) и так почти сука каждый день, сестра любила генералку устраивать в единственный мой выходной в 8 утра, в случае моего отказа выливала ковш воды мне на голову. А сейчас сука всем жалуются чего это я с ними не общаюсь и не показываю бабушке своего ребёнка.</p><p>1580 1 день назад Пацан должен дрочить с открытыми дверями? раскрыть ветку (161)</p><p>20 токситоциник 23 часа назад Игрушка быстро выросла - мамаша не успела наиграться раскрыть ветку (1)</p><p>Жизнь с такой мамашей выглядит как-то так [Video 6](https://cs18.pikabu.ru/s/2026/08/17/12/igobfnut_s0f0d33m0_720x1280_low.mp4) Пикабу ● 00:33 [Video 7](https://cs3.pikabu.ru/s/2026/08/17/12/foqpbcwb_s0f0d42m0_360x640_low.mp4)</p><p>Пикабу ● 00:42 Эта тоже постоянно мечтает увидеть то, как сын гуся душит. Извращенка какая-то Показать полностью**1** [комментарии (1)](https://pikabu.ru/story/otvet_na_post_lichnoe_prostranstvo_14250174#comments)</p><p>20 1 день назад Ха, у бывшей жены у родителей дома вообще дверей не было, типа нахуя они нужны, все же свои)) раскрыть ветку (6)</p><p>240 1 день назад Ебать, а в ванну с туалетом тоже дверь закрывать нельзя? А нахуя в этой квартире вообще тогда двери? Проще дыры в стенах было оставить и все. А то, не дай боже, пацан к себе девку приведет, а "мамулечка" не посмотрит, правильно ли ее сыночек девАк шпехает?</p><p>раскрыть ветку (44) 119 1 день назад Упоминание мамой в диалоге себя в третьем лице, а также аффирмации "мы же семья" вместо реальной аргументации - уже прямо-таки знаки.</p><p>раскрыть ветку (4) 31 1 день назад У нас сыновьям 6 и 9 лет. И на детской комнате крючок снаружи 😄</p><p>раскрыть ветку (1) 44 1 день назад Мда, ебанутых мамаш дофига... Сначала они личное пространство ограничивают, а потом сынулькам уже 40+, а они... Задроты</p><p>раскрыть ветку (1) 73 1 день назад &gt; повадился закрывать дверь в **свою** комнату</p><p>Она прекрасно понимает что комната его, и именно поэтому и показывает сыну кто тут хозяин, а кто конь педальный. Что может быть прекраснее, чем проявлять свою власть над тем, кто только учится быть самостоятельным. раскрыть ветку (11)</p><p>8 Я проголосую за КПРФ 17 часов назад Бгг. Если бы я в детстве вздумал заикнуться про "личные границы" - мне бы просто сказали, что "у тебя нет никакой своей комнаты, эта комната принадлежит мне" и отпиздили. раскрыть ветку (4)</p><p>43 1 день назад Иллюстрацию нашла к этой ситуации. раскрыть ветку (10)</p><p>7 19 часов назад Вспомнилась история про мамашку, которая своему сыну не давала ни дверь в душ и туалет (!!!) закрывать, ни шторкой пользоваться. Вышеописанная со скрина, похоже, из таких же ебанашек-извращенок с инцестуозными наклонностями</p><p>7 21 час назад Стоит сыну зайти разок в комнату во время секса родителей-и, может, тогда мама поймёт, что личное пространство всё же существует? Неужели не понимает: пубертат, гормональный дурдом, дрочка и т. д.? Или хочет морально подбодрить сына в процессе дрочки? Или не морально?...</p><p>7 21 час назад Пфф, не вижу проблем, если моя мама захочет войти в мою комнату, то я не против. Все равно я живу в другом городе и она не знает моего адреса Чтобы оставить комментарий, необходимо [зарегистрироваться](https://pikabu.ru/story/lichnoe_prostranstvo_14247302#signup) или [войти](https://pikabu.ru/story/lichnoe_prostranstvo_14247302#signin)</p></div></details>
 <a class="src" href="https://pikabu.ru/story/lichnoe_prostranstvo_14247302" target="_blank" rel="noopener">OPEN SOURCE ↗</a>
 
 </div></details></section><section id="tech" class="sec" data-sec="tech">
@@ -343,60 +324,41 @@ I can see why she wouldnt put any of them in a position close to her.</span></sp
 </div></details><details class="tcard" open>
 <summary><span class="prompt">$</span> <span class="tlink">Tell HN: Cloudflare silently injects its analytics when you switch nameservers</span> <span class="dim">[]</span> <span class="tog">[−]</span></summary>
 <div class="tinner">
-<div class="abody serif"><p>User reports Cloudflare started serving its own analytics snippet right after a nameserver switch, without opt-in — 368-point discussion on what Cloudflare collects and how to turn it off.</p></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>Hacker News new | past</p><p>| comments | ask</p><p>| show | jobs</p><p>| submit login Tell HN: Cloudflare silently injects its analytics when you switch nameservers</p><p>375 points by stagas 11 hours ago</p><p>| hide | past</p><p>| favorite | 100 comments</p><p>A few hours ago I switched my nameservers to Cloudflare in order to enable R2 bucket serving through my own subdomain, and I found out that it silently had injected a JS analytics snippet in my HTML-only JS-free site textlog.cc — I had to go to the Analytics dashboard, Add the site to the analytics and then</p><p>disable the snippet. I find this approach entirely invasive, you should opt-in to features like that not have to opt-out. Just a warning out there to folks who might not be aware of this. help leinwand 2 hours ago</p><p>| next [–] oefrha</p><p>9 minutes ago | parent |</p><p>next [–] tredre3 1 hour ago</p><p>| parent | prev</p><p>| next [–] tacitusarc</p><p>1 hour ago | root |</p><p>parent | next [–]</p><p>hecturchi 37 minutes ago | root</p><p>| parent | next</p><p>[–] dchest 1 hour ago |</p><p>parent | prev |</p><p>next [–] okzgn 9 hours ago</p><p>| prev | next</p><p>[–] 1vuio0pswjnm7 5 hours ago |</p><p>parent | next [–]</p><p>1vuio0pswjnm7 3 hours ago | root</p><p>| parent | next</p><p>[–] zmgsabst 2 hours ago |</p><p>root | parent |</p><p>next [–] 1vuio0pswjnm7 7 minutes ago</p><p>| root | parent</p><p>| next [–] okzgn</p><p>4 hours ago | root |</p><p>parent | prev |</p><p>next [–] pcmaffey 4 hours ago</p><p>| parent | prev</p><p>| next [–] hahn-kev</p><p>3 hours ago | root |</p><p>parent | next [–]</p><p>chrisweekly 2 hours ago | root</p><p>| parent | next</p><p>[–] purpleidea 10 hours ago |</p><p>prev | next [–]</p><p>kevincox 9 hours ago | parent</p><p>| next [–] chrisweekly</p><p>2 hours ago | root |</p><p>parent | next [–]</p><p>matherial 1 hour ago | root</p><p>| parent | next</p><p>[–] zx8080 3 hours ago |</p><p>root | parent |</p><p>prev | next [–]</p><p>zeafoamrun 1 hour ago | root</p><p>| parent | next</p><p>[–] reaperducer 3 hours ago |</p><p>root | parent |</p><p>prev | next [–]</p><p>stackghost 4 hours ago | parent</p><p>| prev | next</p><p>[–] dchest 10 hours ago |</p><p>prev | next [–]</p><p>altairprime 9 hours ago | parent</p><p>| next [–] cromka</p><p>1 hour ago | root |</p><p>parent | next [–]</p><p>kazinator 8 hours ago | prev</p><p>| next [–] tick_tock_tick</p><p>2 hours ago | parent |</p><p>next [–] hackernud3s 7 hours ago</p><p>| parent | prev</p><p>| next [–] ____tom____</p><p>4 hours ago | root |</p><p>parent | next [–]</p><p>supermdguy 3 hours ago | root</p><p>| parent | next</p><p>[–] vickychijwani 2 hours ago |</p><p>root | parent |</p><p>next [–] kazinator 1 hour ago</p><p>| root | parent</p><p>| next [–] hackernud3s</p><p>2 hours ago | root |</p><p>parent | prev |</p><p>next [–] vickychijwani 1 hour ago</p><p>| root | parent</p><p>| next [–] furyofantares</p><p>15 minutes ago | root |</p><p>parent | next [–]</p><p>mjmas 40 minutes ago | root</p><p>| parent | prev</p><p>| next [–] userbinator</p><p>8 hours ago | prev |</p><p>next [–] Terr_ 4 hours ago</p><p>| parent | next</p><p>[–] outlines 9 hours ago |</p><p>prev | next [–]</p><p>stagas 9 hours ago | parent</p><p>| next [–] cortesoft</p><p>8 hours ago | root |</p><p>parent | next [–]</p><p>TiredOfLife 9 hours ago | root</p><p>| parent | prev</p><p>| next [–] stagas</p><p>9 hours ago | root |</p><p>parent | next [–]</p><p>windexh8er 10 hours ago | prev</p><p>| next [–] JoshTriplett</p><p>10 hours ago | parent |</p><p>next [–] sscaryterry 10 hours ago</p><p>| root | parent</p><p>| next [–] JoshTriplett</p><p>10 hours ago | root |</p><p>parent | next [–]</p><p>celsoazevedo 10 hours ago | prev</p><p>| next [–] stagas</p><p>9 hours ago | parent |</p><p>next [–] nilram 5 hours ago</p><p>| root | parent</p><p>| next [–] Animats</p><p>9 hours ago | prev |</p><p>next [–] bawolff 9 hours ago</p><p>| parent | next</p><p>[–] MrJohz 8 hours ago |</p><p>root | parent |</p><p>next [–] bawolff 6 hours ago</p><p>| root | parent</p><p>| next [–] fragmede</p><p>2 hours ago | root |</p><p>parent | next [–]</p><p>gruez 7 hours ago | root</p><p>| parent | prev</p><p>| next [–] Aeolun</p><p>4 hours ago | root |</p><p>parent | prev |</p><p>next [–] kazinator 8 hours ago</p><p>| root | parent</p><p>| prev | next</p><p>[–] bawolff 6 hours ago |</p><p>root | parent |</p><p>next [–] threecheese 7 hours ago</p><p>| root | parent</p><p>| prev | next</p><p>[–] muvlon 5 hours ago |</p><p>root | parent |</p><p>next [–] bawolff 4 hours ago</p><p>| root | parent</p><p>| next [–] stagas</p><p>9 hours ago | root |</p><p>parent | prev |</p><p>next [–] eaf7e281 8 hours ago</p><p>| root | parent</p><p>| next [–] dboreham</p><p>8 hours ago | root |</p><p>parent | prev |</p><p>next [–] Touchnow 9 hours ago</p><p>| parent | prev</p><p>| next [–] ValentineC</p><p>10 hours ago | prev |</p><p>next [–] sparsesignal 8 hours ago</p><p>| prev | next</p><p>[–] jjcm 8 hours ago |</p><p>prev | next [–]</p><p>BorisMelnik 10 hours ago | prev</p><p>| next [–] Symbiote</p><p>9 hours ago | prev |</p><p>next [–] hackernud3s 7 hours ago</p><p>| parent | next</p><p>[–] minraws 10 hours ago |</p><p>prev | next [–]</p><p>busymom0 9 hours ago | parent</p><p>| next [–] jesterson</p><p>4 hours ago | prev |</p><p>next [–] denkmoon 1 hour ago</p><p>| prev | next</p><p>[–] deadbabe 2 hours ago |</p><p>prev | next [–]</p><p>yogorenapan 9 hours ago | prev</p><p>| next [–] pudgywalsh</p><p>10 hours ago | prev |</p><p>next [–] camel_gopher 1 hour ago</p><p>| parent | next</p><p>[–] stagas 9 hours ago |</p><p>parent | prev |</p><p>next [–] stagas 9 hours ago</p><p>| root | parent</p><p>| next [–] temp0826</p><p>8 hours ago | root |</p><p>parent | prev |</p><p>next [–] kazinator 8 hours ago</p><p>| root | parent</p><p>| prev | next</p><p>[–] johntash 10 hours ago |</p><p>parent | prev |</p><p>next [–] sebastiennight 7 hours ago</p><p>| root | parent</p><p>| next [–] sebastiennight</p><p>7 hours ago | prev |</p><p>next [–] mbravorus 31 minutes ago</p><p>| parent | next</p><p>[–] sitzkrieg 5 hours ago |</p><p>prev | next [–]</p><p>fragmede 2 hours ago | parent</p><p>| next [–] monitorion</p><p>9 hours ago | prev |</p><p>next [–] p0w3n3d 8 hours ago</p><p>| prev | next</p><p>[–] csomar 10 hours ago |</p><p>prev | next [–]</p><p>moktonar 10 hours ago | prev</p><p>| next [–] _def</p><p>10 hours ago | parent |</p><p>next [–] Bender 8 hours ago</p><p>| root | parent</p><p>| next [–] LoganDark</p><p>9 hours ago | root |</p><p>parent | prev |</p><p>next [–] sssilver 9 hours ago</p><p>| root | parent</p><p>| next [–] cryo32</p><p>8 hours ago | root |</p><p>parent | prev |</p><p>next [–] Guidelines |</p><p>FAQ | Lists |</p><p>API | Security |</p><p>Legal | Apply to YC |</p><p>Contact Search:</p></div></details>
+<div class="abody serif"><p>User reports Cloudflare started serving its own analytics snippet right after a nameserver switch, without opt-in — 368-point discussion on what Cloudflare collects and how to turn it off.</p></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>A few hours ago I switched my nameservers to Cloudflare in order to enable R2 bucket serving through my own subdomain, and I found out that it silently had injected a JS analytics snippet in my HTML-only JS-free site textlog.cc — I had to go to the Analytics dashboard, Add the site to the analytics and then disable the snippet. I find this approach entirely invasive, you should opt-in to features like that not have to opt-out. Just a warning out there to folks who might not be aware of this.</p></div></details>
 <a class="src" href="https://news.ycombinator.com/item?id=49322107" target="_blank" rel="noopener">OPEN SOURCE ↗</a>
 
 </div></details><details class="tcard" open>
 <summary><span class="prompt">$</span> <span class="tlink">Trained a 1.5B to write shell commands so I'd stop googling tar flags</span> <span class="dim">[r/LocalLLaMA · u/PicassoOnPause · ▲ 1.4k · 199c]</span> <span class="tog">[−]</span></summary>
 <div class="tinner">
-<div class="abody"><img class="storyimg" src="https://i.redd.it/di0yenio27jh1.gif" alt="" loading="lazy"></div>
+<div class="abody serif"><p>A self-hosted 1.5B model fine-tuned to turn plain-English shell requests into commands; runs on a laptop CPU in about a second. The thread digs into training data and how it handles flags it never saw.</p></div><div class="abody"><img class="storyimg" src="https://i.redd.it/di0yenio27jh1.gif" alt="" loading="lazy"></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>I've been googling "tar extract gz" for about ten years. and I finally did something about it. It started out as a research project and I ended up with a Fine-tuned Qwen2.5-Coder-1.5B on 125k natural-language/command pairs, merged and quantized to Q4\_K\_M. 941MB which runs through llama.cpp. On my laptop (i5-11320H, 4 threads): 31.9 tok/s, 0.59s median per query, 1.6GB RAM.</p><p>I benchmarked it and it scores 0.620 on InterCode-ALFA. Untuned Qwen2.5-Coder-7B gets 0.613, GPT-4o gets 0.73. Not frontier, but it's roughly a 7B's answer at a quarter the parameters on a CPU. Theres a 3B variant too that scores higher. There's also few static safety checker, because it will absolutely write a command that wipes your root if you ask it to:</p><p>I have published the weights: [huggingface.co/ThorOdinson246/nl2sh-1.5b-Q4\_K\_M](http://huggingface.co/ThorOdinson246/nl2sh-1.5b-Q4_K_M) and Code: [github.com/ThorOdinson246/whatisit-nl2sh](http://github.com/ThorOdinson246/whatisit-nl2sh) . I posted few days ago in LocalLLM and it did well 300+ stars and so many good suggestions so I figured people here will be interested too. Both Apache-2.0. If you want to poke holes in the method or you've got ideas, please comment or open a PR. A ⭐ helps if you find it useful.</p></div></details>
 <a class="src" href="https://reddit.com/r/LocalLLaMA/comments/1vnl0um/trained_a_15b_to_write_shell_commands_so_id_stop/" target="_blank" rel="noopener">OPEN SOURCE ↗</a>
-<div class="tcmt"><span class="ta">├─ PicassoOnPause [88]</span>
-<span class="tb">│  <span class="serif">Yo, gone for 30 mins and came to this lol.  
-  
-Just because GitHub is new, you deem it vibecoded. I am sorry i dont post my entire research project dump and make a new github for a project's package. I have said this, this started as a research project, and I am not only building this, this is something i shipped as part of a bigger research project, that i will hopefully publish lol.   
-To the matter of why  I only compared it to 4o because it's the only frontier model reported in the NL2SH-ALFA paper which scored the most and whose benchmark I am using. Not a lot of benchmark exist for this specific task. if you know any let me know.
-
-On Qwen2.5-Coder: it's where I started, and I've tested newer bases since, and i have repeatedly been mentioning that in the comments too. I have tested newer 3.5 and Gemma models, their scores were not really good to begin shipping them as a cpu friendly model. Heres scores from that same benchmark.   
-  
-gpt-4o (their paper)       0.74  
-my tuned 1.5B i.e  nl2sh-1.5b-Q4\_K\_M   0.620  
-Qwen3.5-4B untuned         0.573  
-Gemma 4 E4B untuned        0.550  
-SmolLM3-3B tuned           0.549  
-Qwen2.5-Coder 1.5B untuned 0.528  
-Gemma 4 E2B untuned        0.419  
-Qwen3.5-2B untuned         0.325
-
-2.5coder is the one that was the bang for bucks so i shipped it. New is not always better.   
-I don't know what you will do by me listing scores. They will mean nothing, if you want benchmarks logs and all. I can happily send them in DM.   
-  
-This is the reason why its on qwen2.5. at a model this size, it hs been the trainig data that is doing most of the work, bigger params doesnot always mean better scores and answer. As for Rule #4. It is my project, and I've said so. I am not just answering questions and dropping a link and running. If you want to delete the post, than i wont argue. I am just giving to the community; a lot of folks seem to have genuinely found this useful, opened PR and i am happy for it.</span></span></div>
-<div class="tcmt"><span class="ta">├─ Sioluishere [56]</span>
-<span class="tb">│  <span class="serif">I am sorry but this is actually an interesting project, and I have not seen this before, so what the hell?</span></span></div>
-<div class="tcmt"><span class="ta">├─ PicassoOnPause [31]</span>
-<span class="tb">│  <span class="serif">Got a little carried away. Thanks.</span></span></div>
+<div class="tcmt"><span class="ta">├─ PicassoOnPause [510]</span>
+<span class="tb">│  <span class="serif">Get your best German accent out and say out loud: COMPRESS ZE VUCKING FILE!! —&gt; -czvf XTRACT ZE VUCKING FILE!! —&gt; -xzvf</span></span></div>
+<div class="tcmt"><span class="ta">├─ PicassoOnPause [114]</span>
+<span class="tb">│  <span class="serif">is it really weird that i never knew this? A lot of people kept saying this in the other subreddit too and i was just shocked.</span></span></div>
+<div class="tcmt"><span class="ta">├─ alberto_467 [92]</span>
+<span class="tb">│  <span class="serif">This is like giving a loaded T34 tank to an infant.</span></span></div>
 </div></details></section><section id="cool_stuff" class="sec" data-sec="cool_stuff">
 <div class="shead"><span class="sn">[09]</span> COOL STUFF <span class="srule"></span></div>
 <details class="tcard" open>
 <summary><span class="prompt">$</span> <span class="tlink">Meet Luna, a rare leucistic lioness whose snow-white coat, piercing blue-gray eyes, and naturally lo...</span> <span class="dim">[r/interestingasfuck · u/Negative_Cry_1679 · ▲ 40.5k · 491c]</span> <span class="tog">[−]</span></summary>
 <div class="tinner">
-<div class="abody"><img class="storyimg" src="https://preview.redd.it/5jyxf8btn9jh1.jpg" alt="" loading="lazy"></div>
+<div class="abody"><img class="storyimg" src="https://preview.redd.it/5jyxf8btn9jh1.jpg" alt="" loading="lazy"></div><div class="abody"><img class="storyimg" src="https://preview.redd.it/9p7581ktn9jh1.jpg" alt="" loading="lazy"></div><div class="abody serif"><p>A leucistic lioness — not albino (blue-gray eyes, not red) — one of the rarest color morphs in lions; 40k upvotes, the photos are the whole post.</p></div>
 <a class="src" href="https://reddit.com/r/interestingasfuck/comments/1vnx034/meet_luna_a_rare_leucistic_lioness_whose/" target="_blank" rel="noopener">OPEN SOURCE ↗</a>
+<div class="tcmt"><span class="ta">├─ vulgarbas3rd [26]</span>
+<span class="tb">│  <span class="serif">https://preview.redd.it/8cop91w86fjh1.jpeg?width=1284&amp;format=pjpg&amp;auto=webp&amp;s=3126e590d059ec9970a2681872c7b83858ec7b48</span></span></div>
+<div class="tcmt"><span class="ta">├─ skulxen [23]</span>
+<span class="tb">│  <span class="serif">So now we're adding more shit to these fake photos?
 
+This lion does not have these eyelashes. Lions do not have long eyelashes. These are edited photos and are FAKE</span></span></div>
+<div class="tcmt"><span class="ta">├─ TheSuspense- [18]</span>
+<span class="tb">│  <span class="serif">https://preview.redd.it/h8lqwv8szcjh1.png?width=1080&amp;format=png&amp;auto=webp&amp;s=2e7a4b1829d1b53ee90cc5868b773eb853b134d4</span></span></div>
 </div></details><details class="tcard" open>
 <summary><span class="prompt">$</span> <span class="tlink">Cub mistakes another Bear for its mom, actual mom springs into action to make the save.</span> <span class="dim">[r/interestingasfuck · u/Key_Skirt_1858 · ▲ 13.2k · 372c]</span> <span class="tog">[−]</span></summary>
 <div class="tinner">
-<div class="abody serif"><p>A bear cub runs to the wrong adult, the real mom intervenes — 13k upvotes; the video is the entire story.</p></div><details class="tmore"><summary>▸ READ FULL STORY</summary><div class="tmorebody serif"><p>You've been blocked by network security. To continue, log in to your Reddit account or use your developer token If you think you've been blocked by mistake, file a ticket below and we'll look into it. [Log in](https://www.reddit.com/login/)[File a ticket](https://support.reddithelp.com/hc/en-us/requests/new?ticket_form_id=21879292693140)</p></div></details>
+<div class="abody"><div class="vidwrap"><video controls preload="metadata" src="https://v.redd.it/qb6d9fogp8jh1/CMAF_220.mp4"></video></div></div><div class="abody serif"><p>A bear cub runs to the wrong adult, the real mom intervenes — 13k upvotes; the video is the entire story.</p></div>
 <a class="src" href="https://reddit.com/r/interestingasfuck/comments/1vnszig/cub_mistakes_another_bear_for_its_mom_actual_mom/" target="_blank" rel="noopener">OPEN SOURCE ↗</a>
-<div class="tcmt"><span class="ta">├─ bluecrowned [17]</span>
-<span class="tb">│  <span class="serif">It also stresses them out to have a bunch of people looking at it, recently a bear on an electric pole died because people wouldn't leave it alone so it could come down</span></span></div>
-<div class="tcmt"><span class="ta">├─ redditseddit4u [16]</span>
-<span class="tb">│  <span class="serif">Bear moms are extremely defensive. The cub with the fish walked up to another mom with her cub. She was probably aggressive because she was trying to protect her cub. And then both moms started fighting each other.
 
-It all seems like a simple misunderstanding of a couple bear moms trying to protect their own cubs.</span></span></div>
-<div class="tcmt"><span class="ta">├─ MagicSPA [16]</span>
-<span class="tb">│  <span class="serif">Crossing a street in Edinburgh I had a woman absently take my hand and say "Come along, darling..." then flinch away, laughing embarrassedly when she clocked that I wasn't her kid, who was actually standing on the other side of her.</span></span></div>
 </div></details></section>
   <section id="fun" class="sec interlude" data-sec="fun">
 <div class="shead"><span class="sn">[II]</span> INTERLUDE <span class="srule"></span></div>
